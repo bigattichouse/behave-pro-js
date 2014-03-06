@@ -1,0 +1,41 @@
+{
+  "name": "behave-pro-js",
+  "version": "0.0.1",
+  "description": "Description",
+  "main": "behave.js",
+  "scripts": {
+    "test": "test"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/hindsightsoftware/behave-pro-js.git"
+  },
+  "keywords": [
+    "behavepro",
+    "pro",
+    "cucumber",
+    "gherkin",
+    "exporter"
+  ],
+  "author": "bigattichouse",
+  "contributors": [
+    {
+      "name": "Charlie Dowler",
+      "email": "charlie.dowler@hindsightsoftware.co.uk",
+      "url": "http://hindsightsoftware.com/"
+    }
+  ],
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/hindsightsoftware/behave-pro-js/issues"
+  },
+  "homepage": "https://behave.pro/",
+  "dependencies": {
+    "cucumber": "0.4.0",
+    "optimist": "0.6.1",
+    "zip": "1.1.1"
+  },
+  "bin": {
+    "behavepro": "./bin/bouwen"
+  }
+}

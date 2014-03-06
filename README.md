@@ -1,12 +1,26 @@
-usage:  node behave.js [ARGS]
+#Behave Pro Node.js exporter
 
-will download the first project in json.config by default, 
+![Behave Pro](http://hindsightsoftware.com/img/solutions/behave-pro/banner.png)
 
---project or -p arg to specify JIRA Project from json.config, default is first project in file.
+Export Gherkin features from Behave Pro through a simple CLI app.
 
---output or -o to specify output folder
+## Configuration
+```
+{
+"host":"http://example.com",
+"projects":[
+        {
+            "projectID": "[project id from jira/behave pro]",
+            "userID": "[user id from jira/behave pro]",
+            "apiKey": "[api key from jira/behave pro]",
+            "jira": "[associated jira project]"
+        }
+    ]
+}
+```
+##Usage:
+```
+$ behavepro [-c | --config ./config.json] [-m | --manual true] [-o | --output ./features/] [-p | --project projectId]
+```
 
---manual=1 or 0 to specify if manual test features will be downloaded
-
---config or -c to specify alternate config files.
-
+Special thanks to [@bigattichouse](https://twitter.com/bigattichouse)!
